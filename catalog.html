@@ -16,23 +16,21 @@
       </a>
       <div>
         <div>
-          <form action="#" method="post">
-            <button type="submit">
-              <img src="img/search.svg" width="16" height="16" alt="Поиск">
-            </button>
+          <form action="echo.htmlacademy.ru" method="post">
+            <img src="img/search.svg" width="16" height="16" alt="Поиск товара">
             <input name="search" type="search" placeholder="Поиск по сайту">
           </form>
         </div>
         <ul>
           <li>
             <a href="#">
-              <img src="img/user.svg" width="13" height="12" alt="Поиск">
+              <img src="img/user.svg" width="13" height="12" alt="Имя пользователя">
               Валентин петухов
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/user.svg" width="13" height="12" alt="Поиск">
+              <img src="img/user.svg" width="13" height="12" alt="Выйти">
               Выйти
             </a>
           </li>
@@ -55,7 +53,7 @@
         <ul>
           <li>
             <a href="catalog.html">Каталог товаров</a>
-            <img src="img/plus.svg" alt="Плюс">
+            <img src="img/plus.svg" alt="Список товаров">
           </li>
           <li>
             <a href="#">Доставка</a>
@@ -117,10 +115,14 @@
           <a href="#">По популярности</a>
         </li>
         <li>
-          <img src="img/icon-up-dir.svg" alt="Поиск по возрастанию">
+          <button type="button">
+            <img src="img/icon-up-dir.svg" alt="Поиск по возрастанию">
+          </button>
         </li>
         <li>
-          <img src="img/icon-down-dir.svg" alt="Поиск по убыванию">
+          <button type="button">
+            <img src="img/icon-down-dir.svg" alt="Поиск по убыванию">
+          </button>
         </li>
       </ul>
     </section>
@@ -139,16 +141,26 @@
           </div>
           <div>
             <h3>Цвет</h3>
-            <input type="checkbox" name="color" value="Черный" id="black-color-filter" checked>
-            <label for="black-color-filter">Черный</label>
-            <input type="checkbox" name="color" value="Белый" id="white-color-filter">
-            <label for="white-color-filter">Белый</label>
-            <input type="checkbox" name="color" value="Синий" id="blue-color-filter" checked>
-            <label for="blue-color-filter">Синий</label>
-            <input type="checkbox" name="color" value="Красный" id="red-color-filter" checked>
-            <label for="red-color-filter">Красный</label>
-            <input type="checkbox" name="color" value="Розовый" id="pink-color-filter">
-            <label for="pink-color-filter">Розовый</label>
+            <div>
+              <input type="checkbox" name="color" value="Черный" id="black-color-filter" checked>
+              <label for="black-color-filter">Черный</label>
+            </div>
+            <div>
+              <input type="checkbox" name="color" value="Белый" id="white-color-filter">
+              <label for="white-color-filter">Белый</label>
+            </div>
+            <div>
+              <input type="checkbox" name="color" value="Синий" id="blue-color-filter" checked>
+              <label for="blue-color-filter">Синий</label>
+            </div>
+            <div>
+              <input type="checkbox" name="color" value="Красный" id="red-color-filter" checked>
+              <label for="red-color-filter">Красный</label>
+            </div>
+            <div>
+              <input type="checkbox" name="color" value="Розовый" id="pink-color-filter">
+              <label for="pink-color-filter">Розовый</label>
+            </div>
           </div>
           <div>
             <h3>Bluetooth</h3>
@@ -243,7 +255,7 @@
     <ul>
       <li>
         <a href="#">
-          <img src="img/user.svg" width="13" height="12" alt="Поиск">
+          <img src="img/user.svg" width="13" height="12" alt="Имя пользователя">
           Валентин петухов
         </a>
       </li>
