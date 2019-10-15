@@ -10,22 +10,21 @@
 </head>
 
 <body>
-  <header>
+  <header class="main-header">
     <h1 class="visually-hidden">Онлайн магазин электронных гаджетов DEVICE</h1>
-    <nav>
-      <a href="#">
+    <nav class="main-navigation">
+      <a class="main-logo" href="#">
         <img src="img/logo-device.svg" width="163" height="35" alt="Лого Device">
       </a>
-      <div>
-        <div>
-          <form action="echo.htmlacademy.ru" method="post">
-            <img src="img/search.svg" width="16" height="16" alt="Поиск товара">
-            <label for="search-goods"></label>
+      <div class="user-navigation-container">
+        <div class="form-container">
+          <form class="form-search" action="echo.htmlacademy.ru" method="post">
+            <label class="lable-search visually-hidden" for="search-goods"></label>
             <input name="search" type="search" placeholder="Поиск по сайту">
           </form>
         </div>
-        <ul>
-          <li>
+        <ul class="user-navigation">
+          <li class="user-enter-button">
             <a href="#">
               <img src="img/user.svg" width="13" height="12" alt="Имя пользователя">
               Валентин петухов
@@ -51,50 +50,36 @@
           </li>
         </ul>
       </div>
-      <section>
-        <h2 class="visually-hidden">Навигация по сайту</h2>
-        <ul>
-          <li>
-            <a href="catalog.html">Каталог товаров</a>
-            <img src="img/plus.svg" alt="Список товаров">
-          </li>
-          <li>
-            <a href="#">Доставка</a>
-          </li>
-          <li>
-            <a href="#">Гарантия</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2 class="visually-hidden">Навигация по товарам</h2>
-        <ul>
-          <li>
-            <span>Виртуальная реальность</span>
-          </li>
-          <li>
-            <span>Моноподы для селфи</span>
-          </li>
-          <li>
-            <span>Экшн-камеры</span>
-          </li>
-          <li>
-            <span>Фитнес-браслеты</span>
-          </li>
-          <li>
-            <span>Умные часы</span>
-          </li>
-          <li>
-            <span>Квадрокоптеры</span>
-          </li>
-        </ul>
-      </section>
+      <div class="site-info-container">
+          <ul class="site-info">
+            <li>
+              <a href="catalog.html">
+                Каталог товаров
+                <ul class="visually-hidden">
+                    <li><a href="#">Виртуальная реальность</a></li>
+                    <li><a href="#">Моноподы для селфи</a></li>
+                    <li><a href="#">Экшн-камеры</a></li>
+                    <li><a href="#">Фитнес-браслеты</a></li>
+                    <li><a href="#">Умные часы</a></li>
+                    <li><a href="#">Квадрокоптеры</a></li>
+                  </ul>
+              </a>
+              <img src="img/plus.svg" alt="Плюс">
+            </li>
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Гарантия</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
     </nav>
   </header>
-  <main>
+  <main class="main-content">
     <h2 class="visually-hidden">Выбранная категория</h2>
     <ul>
       <li>
@@ -251,11 +236,11 @@
       </ul>
     </section>
   </main>
-  <footer>
+  <footer class="main-footer">
     <a href="#">
       <img src="img/logo-device.svg" width="163" height="35" alt="Лого Device">
     </a>
-    <ul>
+    <ul class="user-navigation-footer">
       <li>
         <a href="#">
           <img src="img/user.svg" width="13" height="12" alt="Имя пользователя">
@@ -278,32 +263,32 @@
         </a>
       </li>
     </ul>
-    <ul>
+    <ul class="delivery-description-footer">
       <li>
         <a href="#">Доставка</a>
       </li>
       <li>
-        <a href="#">Гарнтия</a>
+        <a href="#">Гарантия</a>
       </li>
       <li>
         <a href="#">Контакты</a>
       </li>
     </ul>
-    <p>г.Москва,ул.Строителей,15</p>
-    <p>Тел.: +7(495)495-95-95</p>
-    <ul>
+    <p class="footer-contacts">г.Москва,ул.Строителей,15</p>
+    <p class="footer-contacts">Тел.: +7(495)495-95-95</p>
+    <ul class="footer-social">
       <li>
-        <a href="#">
+        <a class="social-button" href="#">
           <img src="img/facebook.svg" width="32" height="32" alt="Фейсбук">
         </a>
       </li>
       <li>
-        <a href="#">
+        <a class="social-button" href="#">
           <img src="img/twitter.svg" width="32" height="32" alt="Твиттер">
         </a>
       </li>
       <li>
-        <a href="#">
+        <a class="social-button" href="#">
           <img src="img/twitter.svg" width="32" height="32" alt="Инстаграм">
         </a>
       </li>
