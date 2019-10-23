@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Device Магазин</title>
-  <link rel="stylesheet" href="fonts/stylesheet.css">
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/styles.min.css">
 </head>
@@ -82,7 +81,7 @@
   </header>
   <main class="main-content">
     <h2 class="visually-hidden">Выбранная категория</h2>
-    <ul>
+    <ul class="navigation-menu-list">
       <li>
         <a href="#">Главная</a>
       </li>
@@ -93,9 +92,9 @@
     </ul>
     <section>
       <h2>Сортировка:</h2>
-      <ul>
+      <ul class="filter-types-list">
         <li>
-          <a href="#">По цене</a>
+          <a class="seleted-filter" href="#">По цене</a>
         </li>
         <li>
           <a href="#">По типу</a>
@@ -117,18 +116,18 @@
     </section>
     <section>
       <h2>Фильтр:</h2>
-      <aside>
+      <aside class="filters">
         <form action="#" method="post">
-          <div>
+          <div class="range-filter">
             <h3>Стоимость</h3>
             <div>
-              <div>0</div>
+              <div class="min-price">0</div>
             </div>
             <div>
-              <div>5000</div>
+              <div class="max-price">5000</div>
             </div>
           </div>
-          <div>
+          <div class="color-filter">
             <h3>Цвет</h3>
             <div>
               <input type="checkbox" name="color" value="Черный" id="black-color-filter" checked>
@@ -151,7 +150,7 @@
               <label for="pink-color-filter">Розовый</label>
             </div>
           </div>
-          <div>
+          <div class="bluetooth-filter">
             <h3>Bluetooth</h3>
             <input type="radio" name="bluetooth" value="Есть" id="bluetooth-yes" checked>
             <label for="bluetooth-yes">Есть</label>
@@ -164,8 +163,8 @@
     </section>
     <section>
       <h2>Список товаров</h2>
-      <ul>
-        <li>
+      <ul class="product-list">
+        <li class="product-container">
           <div>
             <a href="#">
               <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
@@ -178,7 +177,7 @@
             <span>500 руб.</span>
           </div>
         </li>
-        <li>
+        <li class="product-container">
           <div>
             <a href="#">
               <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
@@ -191,7 +190,7 @@
             <span>1500 руб.</span>
           </div>
         </li>
-        <li>
+        <li class="product-container">
           <div>
             <a href="#">
               <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
@@ -204,7 +203,7 @@
             <span> 2500 руб.</span>
           </div>
         </li>
-        <li>
+        <li class="product-container">
           <div>
             <a href="#">
               <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
@@ -218,7 +217,7 @@
           </div>
         </li>
       </ul>
-      <ul>
+      <ul class="navigation-menu-list">
         <li>
           <a href="#">Назад</a>
         </li>

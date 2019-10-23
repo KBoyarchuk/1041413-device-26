@@ -1,1 +1,70 @@
-/* Comments */
+@font-face {
+  font-style: normal;
+  font-family: "Gilroy - Extra Bold";
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-style: normal;
+  font-family: Gilroy;
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-style: normal;
+  font-family: "Open Sans Light";
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-style: normal;
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Gilroy, Arial, sans-serif;
+  background-color: #fff;
+  min-width: 1440px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
