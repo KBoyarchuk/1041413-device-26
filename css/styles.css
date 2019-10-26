@@ -1,33 +1,32 @@
 @font-face {
-  font-style: normal;
-  font-family: "Gilroy - Extra Bold";
-  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
-    url("../fonts/gilroyextrabold.woff") format("woff");
-  font-weight: normal;
-}
-
-@font-face {
-  font-style: normal;
-  font-family: Gilroy;
-  src: url("../fonts/gilroylight.woff2") format("woff2"),
-    url("../fonts/gilroylight.woff") format("woff");
-  font-weight: normal;
-}
-
-@font-face {
-  font-style: normal;
-  font-family: "Open Sans Light";
-  src: url("../fonts/opensanslight.woff2") format("woff2"),
-    url("../fonts/opensanslight.woff") format("woff");
-  font-weight: normal;
-}
-
-@font-face {
-  font-style: normal;
-  font-family: "Open Sans";
-  src: url("../fonts/opensans.woff2") format("woff2"),
+  font-family: OpenSans;
+  font-weight: 400;
+  src: local("OpenSans"), url("../fonts/opensans.woff2") format("woff2"),
     url("../fonts/opensans.woff") format("woff");
-  font-weight: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  font-weight: 300;
+  src: local("OpenSans-Light"),
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-weight: 800;
+  src: local("Gilroy-ExtraBold"),
+    url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-weight: 300;
+  src: local("Gilroy-Light"),
+    url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 * {
@@ -35,11 +34,12 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000;
   background-color: #fff;
-  min-width: 1440px;
 }
 
 img {
@@ -50,10 +50,6 @@ img {
 a {
   color: #000;
   text-decoration: none;
-}
-
-li {
-  list-style-type: none;
 }
 
 .visually-hidden {
@@ -67,4 +63,126 @@ li {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.text {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 4px;
+  font-weight: 800;
+  color: #000;
+}
+
+.crossed-link {
+  text-transform: uppercase;
+}
+
+.search-button {
+  background-color: transparent;
+  opacity: 0;
+}
+
+.search-input:focus + .search-button {
+  color: #000;
+}
+
+.product-icon-title a {
+  line-height: 36px;
+  letter-spacing: 0;
+}
+
+.filter-title,
+.services-list li,
+.product-list a {
+  letter-spacing: 0;
+}
+
+.footer-navigation a {
+  color: rgba(255, 255, 255, .7);
+}
+
+.delivery-description a,
+.footer-contacts,
+.footer-navigation a:focus,
+.footer-navigation a:hover {
+  color: #fff;
+}
+
+.logo:active,
+.search-input::placeholder,
+.list a:active,
+.product-icon-title:active {
+  opacity: .3;
+}
+
+.search-input:focus::placeholder,
+.search-input:focus + .search-button {
+  opacity: 1;
+}
+
+.logo:hover,
+.logo:focus,
+.search-input:hover::placeholder,
+.list a:hover,
+.list a:focus {
+  opacity: .6;
+}
+
+.search-input:focus + .search-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.search-input:focus + .search-button:active {
+  background-color: #000;
+  color: rgba(255, 255, 255, .3);
+}
+
+.list {
+  list-style-type: none;
+}
+
+.about-title,
+.contact-title,
+.product-title {
+  font-size: 47px;
+  font-family: Gilroy, Arial, sans-serif;
+  line-height: 48px;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.services-list {
+  list-style-type: circle;
+}
+
+.footer {
+  background-color: #464646;
+}
+
+.logo.footer {
+  color: #ffc600;
+}
+
+.footer-navigation a:active {
+  color: rgba(255, 255, 255, .3);
+}
+
+.product-navigation li {
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.product-navigation a:active {
+  opacity: .1;
+}
+
+.filters input:disabled + label {
+  color: #979797;
+}
+
+.product-price {
+  color: #464646;
 }
